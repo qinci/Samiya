@@ -4,13 +4,13 @@
 [Script]
 #>>>>>>>>>>>>>>>>>>>>>>多合一解锁
 # buy.itunes.apple.com, 
-itunes= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/longlongx/Surge/master/Module/JS/itunes.js
+itunes= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=hhttps://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Crack/itunes.js
 
 # api.revenuecat.com, 
-receipts= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$, script-path=https://raw.githubusercontent.com/longlongx/Surge/master/Module/JS/receipts.js
+receipts= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$, script-path=hhttps://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Crack/receipts.js
 
 # api.revenuecat.com, 
-revenuecat= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}$, script-path=https://raw.githubusercontent.com/longlongx/Surge/master/Module/JS/revenuecat.js
+revenuecat= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}$, script-path=hhttps://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Crack/revenuecat.js
 
 #>>>>>>>>>>>>>>>>>>>>>>生活
 # apiios_dq.xiangha.com, appweb_dq.xiangha.com, 101.200.225.157, 
@@ -169,11 +169,11 @@ appraven美化= requires-body=1, max-size=0, type=http-response, pattern=^https?
 
 # api2.tophub.app, 
 # 今日热榜
-今日热榜= requires-body=1, max-size=0, type=http-response, pattern=^https:\/\/api2\.tophub\.app\/account\/sync, script-path=https://raw.githubusercontent.com/longlongx/Surge/master/Module/JS/jrrb.js
+今日热榜= requires-body=1, max-size=0, type=http-response, pattern=^https:\/\/api2\.tophub\.app\/account\/sync, script-path=hhttps://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Crack/jrrb.js
 
 # oauth.secure.pixiv.net, 
 # Pixiv
-Pixiv= requires-body=1, max-size=0, type=http-response, pattern=^https://oauth.secure.pixiv.net/auth/token, script-path=https://raw.githubusercontent.com/longlongx/Surge/master/Module/JS/pixiv.js
+Pixiv= requires-body=1, max-size=0, type=http-response, pattern=^https://oauth.secure.pixiv.net/auth/token, script-path=hhttps://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Crack/pixiv.js
 
 # spclient.wg.spotify.com, 
 # Spotify pro
