@@ -1,0 +1,10 @@
+#!name=Other-TunOnly
+#!desc=用于跳过某些App的代理检测
+#!system=ios
+
+[General]
+compatibility-mode = 3
+force-http-engine-hosts = %APPEND% -<ip-address>, *
+
+[MITM]
+tcp-connection = true

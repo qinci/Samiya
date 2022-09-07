@@ -1,0 +1,5 @@
+#!name=Other-MitmAll
+#!desc=添加所有域名(抓包时开启）
+
+[MITM]
+hostname = -*.apple.com, -*.icloud.com, -*.mzstatic.com, -*.crashlytics.com, -*.facebook.com, -*.instagram.com, *:0

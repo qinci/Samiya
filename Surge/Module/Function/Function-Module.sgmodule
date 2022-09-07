@@ -1,0 +1,53 @@
+#!name=Function-Module
+#!desc=BoxJS/Sub-Store/TestFlight账户管理/DualSub/Github Private
+
+# > BoxJS
+# https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.surge.sgmodule
+
+# > Sub-Store
+# 高级订阅管理工具 @Peng-YM
+# https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/Surge.sgmodule
+
+# > TestFlight账户管理
+# 自动存储/合并多个TestFlight账户列表, 并可导出/分享TestFlight APP.
+# https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/TestFlightAccount.sgmodule
+
+# > DualSub
+# Disney+, Star+, HBO Max, Hulu, Netflix, Paramount+, Prime Video, YouTube, etc. subtitles add-ons
+# https://raw.githubusercontent.com/Neurogram-R/Surge/master/module/Dualsub.sgmodule
+
+# > Github Private
+# 允许引用Github私有仓库/gist中的订阅分流，重写，脚本等配置文件。
+# https://raw.githubusercontent.com/Peng-YM/QuanX/master/Rewrites/GithubPrivate/github-private-repo.js
+
+[General]
+# > BoxJS
+force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net
+
+# > TestFlight账户管理
+skip-proxy = %APPEND% iosapps.itunes.apple.com
+
+[Script]
+# > BoxJS
+Rewrite: BoxJs = type=http-request,pattern=https?:\/\/boxjs\.(com|net),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120
+
+# > Sub-Store
+Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store.min.js,requires-body=true,timeout=120,max-size=131072,ability=http-client-policy
+Sub-Store Sync = type=cron,cronexp=0 0 * * *,wake-system=1,timeout=120,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
+
+# > TestFlight账户管理
+TestFlight账户管理 = type=http-request,pattern=^https:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/TestFlight/TestFlightAccount.js
+
+# > DualSub
+Dualsub = type=http-response,pattern=^http.+(media.(dss|star)ott|manifests.v2.api.hbo|hbomaxcdn|nflxvideo|cbs(aa|i)video|cloudfront|akamaihd|avi-cdn|huluim|youtube).(com|net)\/(.+\.vtt($|\?m=\d+)|.+-all-.+\.m3u8.*|hls\.m3u8.+|\?o=\d+&v=\d+&e=.+|\w+\/2\$.+\/[a-zA-Z0-9-]+\.m3u8|api\/timedtext.+),requires-body=1,max-size=0,timeout=30,script-path=https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+Dualsub-setting = type=http-request,pattern=^http.+(setting|general).(media.dssott|hbomaxcdn|nflxvideo|youtube|cbsivideo|cloudfront|huluim).(com|net)\/\?action=(g|s)et,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+
+# > Github Private
+Github Private = type=http-request, requires-body=0, pattern=^https?:\/\/(raw|gist)\.githubusercontent.com, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Rewrites/GithubPrivate/github-private-repo.js,argument=username=longlongx&token=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
+
+[MITM]
+# > Sub-Store //sub.store
+# > TestFlight账户管理 //testflight.apple.com
+# > DualSub //*.media.dssott.com, *.media.starott.com, *.api.hbo.com, *.hbomaxcdn.com, *.huluim.com, *.nflxvideo.net, *.cbsaavideo.com, *.cbsivideo.com, *.cloudfront.net, *.akamaihd.net, *.avi-cdn.net, *.youtube.com
+# > Github Private //raw.githubusercontent.com, gist.githubusercontent.com
+hostname=%APPEND% sub.store, testflight.apple.com, *.media.dssott.com, *.media.starott.com, *.api.hbo.com, *.hbomaxcdn.com, *.huluim.com, *.nflxvideo.net, *.cbsaavideo.com, *.cbsivideo.com, *.cloudfront.net, *.akamaihd.net, *.avi-cdn.net, *.youtube.com, raw.githubusercontent.com, gist.githubusercontent.com
