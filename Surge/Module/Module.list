@@ -1,5 +1,3 @@
-//模块更新捷径 
-https://www.icloud.com/shortcuts/67c3ace4fb3a4f9ebbe8d3184cd82e39
 //京东半自动销卡 
 https://raw.githubusercontent.com/githubdulong/Script/master/Jd_unbindCard.sgmodule
 //京东助手(注入式需key）
@@ -7,20 +5,38 @@ https://raw.githubusercontent.com/githubdulong/Script/master/jdHelper.sgmodule
 //京东联盟转链（联盟、助手二选一）
 https://raw.githubusercontent.com/githubdulong/Script/master/Surge/jdapp_to_union.sgmodule
 
-
-
 # 京东比价模块
 # https://raw.githubusercontent.com/githubdulong/Script/master/jd_price2.sgmodule
 # 广告联盟去广告模块
 # https://raw.githubusercontent.com/app2smile/rules/master/module/adsense.sgmodule
 # 防止googleCN模块
 # https://raw.githubusercontent.com/SukkaW/Surge/master/Modules/google_cn_307.sgmodule
-# ChangeUA 使用手机百度 Quark 的 User-Agent
+# ChangeUA 使用手机百度 Quark 的 User-Agentsgmodule
 # https://raw.githubusercontent.com/zZPiglet/Task/master/ChangeUA.sgmodule
 
-
-# 空气质量代码 - EPA_NowCast.2204
 
 //////////////////////
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Surge/AdvertisingLite/AdvertisingLite.sgmodule
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Surge/SafeRedirect/SafeRedirect.sgmodule
+
+https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/AdBlock/AdBlock-App.sgmodule
+https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/AdBlock/AdBlock-Bilibili.sgmodule
+https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/AdBlock/AdBlock-WeApp.sgmodule
+https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/AdBlock/AdBlock-Web.sgmodule
+
+https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Function/Function-App.sgmodule
+https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Function/Function-iRingo.sgmodule
+https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Function/Function-Module.sgmodule
+https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Function/Function-QSearch.sgmodule
+
+https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Other/Other-Getcookie.sgmodule
+https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Other/Other-MitmAdd.sgmodule
+https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Other/Other-MitmAll.sgmodule
+https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Other/Other-TunOnly.sgmodule
+
+https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Task/Script-CronTask.sgmodule
+
+https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/VipCrack/VIP_Common.sgmodule
+https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/VipCrack/VIP_OwnUse.sgmodule
+
+https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Pannel/Pannel.sgmodule
