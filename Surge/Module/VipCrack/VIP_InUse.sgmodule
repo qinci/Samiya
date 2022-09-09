@@ -1,0 +1,298 @@
+#!name=VIP_InUse
+#!desc=平时使用的一些APP的破解脚本
+
+[Script]
+# Name: 菜谱大全&烘焙小屋 
+# Author: yqc007/QuantumultX
+# hostname: apiios_dq.xiangha.com
+# Type: http-response
+# Pattern: ^https?:\/\/apiios_dq\.xiangha\.com\/v\d\/(dish\/info|User\/getUserData)$
+# Script-path: https://raw.githubusercontent.com/yqc007/QuantumultX/master/XiangHaBakeProCrack.js
+# Availability: 2022/09/09✔
+# Tips: 
+菜谱大全&烘焙小屋= type=http-response, requires-body=1, pattern=^https?:\/\/apiios_dq\.xiangha\.com\/v\d\/(dish\/info|User\/getUserData)$, script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/XiangHaBakeProCrack.js
+
+# Name: Keep 
+# Author: zwf234/rules
+# hostname: .gotokeep.com
+# Type: http-response
+# Pattern: ^https?:\/\/(.+)\.gotokeep\.com(/athena/v\d/people/my|/nuocha/plans)$
+# Script-path: https://raw.githubusercontent.com/zwf234/rules/master/js/keep.js
+# Availability: 2022/09/09❌
+# Tips: 软件版本：7.17.0，不要点击课程预览，往下滑直接点击课程阶段
+Keep= type=http-response, requires-body=1, pattern=^https?:\/\/(.+)\.gotokeep\.com(/athena/v\d/people/my|/nuocha/plans)$, script-path=https://raw.githubusercontent.com/zwf234/rules/master/js/keep.js
+
+# Name: 流利说·阅读 
+# Author: I-am-R-E/Functional-Store-Hub
+# hostname: vira.llsapp.com
+# Type: http-response
+# Pattern:  ^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$
+# Script-path: https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/LiuLiShuoYueDu/Script/LiuLiShuoYueDu.js
+# Availability: 2022/09/09✔
+# Tips: 需要将hostname加入skip-proxy中才能使用
+流利说·阅读=type=http-response, requires-body=1, pattern= ^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$, script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/LiuLiShuoYueDu/Script/LiuLiShuoYueDu.js
+
+# Name: 彩云小译 
+# Author: nzw9314/QuantumultX
+# hostname: .caiyunai.com
+# Type: http-response
+# Pattern:  ^https?:\/\/api\.interpreter\.caiyunai\.com\/v\d\/user$
+# Script-path: https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/cyxy.js
+# Availability: 2022/09/09✔
+# Tips: 
+彩云小译=type=http-response, requires-body=1, pattern= ^https?:\/\/api\.interpreter\.caiyunai\.com\/v\d\/user$, script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/cyxy.js
+
+# Name: Photomath 
+# Author: ddgksf2013/Cuttlefish
+# hostname: lapi.photomath.net
+# Type: http-response
+# Pattern: ^https?:\/\/lapi\.photomath\.net/v\d/me$
+# Script-path: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/poh.js
+# Availability: 2022/09/09✔
+# Tips: 
+Photomath= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/lapi\.photomath\.net/v\d/me$, script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/poh.js
+
+# Name: Symbolab 
+# Author: ddgksf2013/Cuttlefish
+# hostname: scibug.com
+# Type: http-response
+# Pattern: ^https?:\/\/scibug\.com\/appleSubscriptionValidate$
+# Script-path: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/symbolab.js
+# Availability: 2022/09/09✔
+# Tips: 
+Symbolab= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/scibug\.com\/appleSubscriptionValidate$, script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/symbolab.js
+
+# Name: wolframalpha 
+# Author: 52fisher/QuanXX
+# hostname: www.wolframalpha.com
+# Type: http-response
+# Pattern: ^https?:\/\/www\.wolframalpha\.com\/users\/me\/account\?appid=.*$
+# Script-path: https://raw.githubusercontent.com/52fisher/QuanXX/master/scripts/wolframAlpha.js
+# Availability: 2022/09/09❌
+# Tips: 每次打开软件都要点击左上角的三条横线
+wolframalpha= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/www\.wolframalpha\.com\/users\/me\/account\?appid=.*$, script-path=https://raw.githubusercontent.com/52fisher/QuanXX/master/scripts/wolframAlpha.js
+
+# Name: Notability 
+# Author: yqc007/QuantumultX
+# hostname: notability.com
+# Type: http-response
+# Pattern: ^https?:\/\/notability\.com\/subscriptions
+# Script-path: https://raw.githubusercontent.com/yqc007/QuantumultX/master/NotabilityProCrack.js
+# Availability: 2022/09/09❌
+# Tips: 
+Notability= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/notability\.com\/subscriptions,$ script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/NotabilityProCrack.js
+
+# Name: XMind思维导图 
+# Author: nzw9314/QuantumultX
+# hostname: .xmind.cn
+# Type: http-response
+# Pattern: ^https?:\/\/www\.xmind\.cn\/\_res\/devices$
+# Script-path: https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/XMind.js
+# Availability: 2022/09/09✔
+# Tips: 
+XMind思维导图= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/www\.xmind\.cn\/\_res\/devices$, script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/XMind.js
+
+# Name: WPS 
+# Author: NobyDa/Script
+# hostname: account.wps.cn
+# Type: http-response
+# Pattern: ^https?:\/\/account\.wps\..\/api\/users\/.$
+# Script-path: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
+# Availability: 2022/09/09✔
+# Tips: 
+WPS= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/account\.wps\..\/api\/users\/.$, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
+
+# Name: 石墨文档 
+# Author: litieyin/AD_VIP
+# hostname: shimo.im
+# Type: http-response
+# Pattern: ^https?:\/\/shimo\.im\/lizard-api\/users\/me$
+# Script-path: https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/shimo.js
+# Availability: 2022/09/09✔
+# Tips: 
+石墨文档= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/shimo\.im\/lizard-api\/users\/me$, script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/shimo.js
+
+# Name: 幕布 
+# Author: Redeembynight/own
+# hostname: api2.mubu.com
+# Type: http-response
+# Pattern: ^https?:\/\/api2\.mubu\.com\/v\d\/api\/user\/current_user$
+# Script-path: https://raw.githubusercontent.com/Redeembynight/own/main/QuantumultX/script/unlock/mainland/MuBu.js
+# Availability: 2022/09/09✔
+# Tips: 
+幕布= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/api2\.mubu\.com\/v\d\/api\/user\/current_user$, script-path=https://raw.githubusercontent.com/Redeembynight/own/main/QuantumultX/script/unlock/mainland/MuBu.js
+
+# Name: 扫描全能王CamScanner 
+# Author: githubdulong/Script
+# hostname: ap*.intsig.net
+# Type: http-response
+# Pattern: ^https?:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?.*$
+# Script-path: https://raw.githubusercontent.com/githubdulong/Script/master/CamScanner.js
+# Availability: 2022/09/09✔
+# Tips: 
+扫描全能王CamScanner= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?.*$, script-path=https://raw.githubusercontent.com/githubdulong/Script/master/CamScanner.js
+
+# Name: 白描 
+# Author: sirsunknight/QuantumultX
+# hostname: baimiao.uzero.cn
+# Type: http-response
+# Pattern: ^https?:\/\/baimiao\.uzero\.cn\/api\/v\d\.user\/appLaunchWithUser$
+# Script-path: https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/Baimiao.js
+# Availability: 2022/09/09✔
+# Tips: 
+白描= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/baimiao\.uzero\.cn\/api\/v\d\.user\/appLaunchWithUser$, script-path=https://raw.githubusercontent.com/sirsunknight/QuantumultX/master/Scripts/Baimiao.js
+
+# Name: 滴答清单 
+# Author: Voldeemort/Surge
+# hostname: dida365.com, ticktick.com
+# Type: http-response
+# Pattern: ^https?:\/\/(ticktick|dida365)\.com\/api\/v\d\/user\/status$
+# Script-path: https://raw.githubusercontent.com/Voldeemort/Surge/main/script/dida/dida.js
+# Availability: 2022/09/09✔
+# Tips: 
+滴答清单= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/(ticktick|dida365)\.com\/api\/v\d\/user\/status$, script-path=https://raw.githubusercontent.com/Voldeemort/Surge/main/script/dida/dida.js
+
+# Name: PicsArt美易 
+# Author: ddgksf2013/Cuttlefish
+# hostname: api.meiease.c*
+# Type: http-response
+# Pattern: ^https?:\/\/api\.meiease\.cn\/shop\/subscription\/validate$
+# Script-path: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/picsart.js
+# Availability: 2022/09/09✔
+# Tips: 
+PicsArt美易= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/api\.meiease\.cn\/shop\/subscription\/validate$, script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/picsart.js
+
+# Name: FIMO 
+# Author: ddgksf2013/Cuttlefish
+# hostname: server.yoyiapp.com
+# Type: http-response
+# Pattern: ^https?:\/\/server\.yoyiapp\.com\/fimo-user\/user$
+# Script-path: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/fimo.js
+# Availability: 2022/09/09❌
+# Tips: 
+FIMO= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/server\.yoyiapp\.com\/fimo-user\/user$, script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/fimo.js
+
+# Name: VUE 
+# Author: NobyDa/Script
+# hostname: api.vuevideo.net
+# Type: http-response
+# Pattern: ^https?:\/\/api\.vuevideo\.net\/api\/v\d\/(users\/.+\/profile|subtitle\/prepare)$
+# Script-path: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/VUE.js
+# Availability: 2022/09/09✔
+# Tips: 需登录
+VUE= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/api\.vuevideo\.net\/api\/v\d\/(users\/.+\/profile|subtitle\/prepare)$, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/VUE.js
+
+# Name: B612咔叽 
+# Author: ddgksf2013/Cuttlefish
+# hostname: user-kaji-api.b612kaji.com
+# Type: http-response
+# Pattern: ^https?:\/\/user-kaji-api\.b612kaji\.com\/v\d\/purchase\/subscription\/subscriber\/status$
+# Script-path: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/612.js
+# Availability: 2022/09/09✔
+# Tips: 
+B612咔叽= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/user-kaji-api\.b612kaji\.com\/v\d\/purchase\/subscription\/subscriber\/status$, script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/612.js
+
+# Name: 马卡龙玩图 
+# Author: I-am-R-E/QuantumultX
+# hostname: app.api.versa-ai.com
+# Type: http-response
+# Pattern: ^https?:\/\/app\.api\.versa-ai\.com\/pay\/order\/iap\/check$
+# Script-path: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/MaKaLongWanTu.js
+# Availability: 2022/09/09✔
+# Tips: 使用说明：目前测试为一次性解锁
+马卡龙玩图= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/app\.api\.versa-ai\.com\/pay\/order\/iap\/check$, script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/MaKaLongWanTu.js
+
+# Name: appraven美化 
+# Author: ddgksf2013/Cuttlefish
+# hostname: appraven.net
+# Type: http-response
+# Pattern: ^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy)$
+# Script-path: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/appraven.js
+# Availability: 2022/09/09✔
+# Tips: 
+appraven美化= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy)$, script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/appraven.js
+
+# Name: 悟饭趣玩 
+# Author: biaowenzhe/Integrated-resources
+# hostname: iosv2.cjapi.papa21.com
+# Type: http-response
+# Pattern: ^https?:\/\/.+user\/ios_store_pay_edition.+(check_members_identity_v\d|get_member_info)$
+# Script-path: https://raw.githubusercontent.com/biaowenzhe/Integrated-resources/main/PJ/wfqw.js
+# Availability: 2022/09/09❌
+# Tips: 
+悟饭趣玩= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/.+user\/ios_store_pay_edition.+(check_members_identity_v\d|get_member_info)$, script-path=https://raw.githubusercontent.com/biaowenzhe/Integrated-resources/main/PJ/wfqw.js
+
+# Name: 今日热榜 
+# Author: longlongx/Samiya
+# hostname: api2.tophub.app
+# Type: http-response
+# Pattern: ^https?:\/\/api\d\.tophub\.app\/account\/sync$
+# Script-path: https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Crack/jrrb.js
+# Availability: 2022/09/09✔
+# Tips: 
+今日热榜= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/api\d\.tophub\.app\/account\/sync$, script-path=https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Crack/jrrb.js
+
+# Name: Pixiv 
+# Author: longlongx/Samiya
+# hostname: oauth.secure.pixiv.net
+# Type: http-response
+# Pattern: ^https?:\/\/oauth\.secure\.pixiv\.net\/auth\/token$
+# Script-path: https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Crack/pixiv.js
+# Availability: 2022/09/09❌
+# Tips: 
+Pixiv= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/oauth\.secure\.pixiv\.net\/auth\/token$, script-path=https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Crack/pixiv.js
+
+# Name: Spotify 
+# Author: app2smile/rules
+# hostname: spclient.wg.spotify.com
+# Type: http-response
+# Pattern: ^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v\d\/bootstrap|user-customization-service\/v\d\/customize)$
+# Script-path: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+# Availability: 2022/09/09❌
+# Tips: 
+Spotify= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v\d\/bootstrap|user-customization-service\/v\d\/customize)$, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+
+# Name: 迅雷 
+# Author: Marol62926/MarScrpt
+# hostname: xluser-ssl.xunlei.com
+# Type: http-response
+# Pattern: ^https?:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v\d\/getuserinfo$
+# Script-path: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/xunlei.js
+# Availability: 2022/09/09✔
+# Tips: 
+迅雷= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v\d\/getuserinfo$, script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/xunlei.js
+
+# Name: Hyperweb 
+# Author: ddgksf2013/Cuttlefish
+# hostname: zy6kcqa01a.execute-api.us-east-2.amazonaws.com
+# Type: http-response
+# Pattern: ^https?:\/\/zy6kcqa01a\.execute-api\.us-east-\d\.amazonaws\.com\/prod\/verifyReceipt$
+# Script-path: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/hyperweb.js
+# Availability: 2022/09/09✔
+# Tips: 
+Hyperweb= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/zy6kcqa01a\.execute-api\.us-east-\d\.amazonaws\.com\/prod\/verifyReceipt$, script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/hyperweb.js
+
+# Name: Emby 
+# Author: zwf234/rules
+# hostname: mb3admin.com
+# Type: http-response
+# Pattern: ^https?:\/\/mb3admin\.com\/admin\/service\/registration\/validateDevice$
+# Script-path: https://raw.githubusercontent.com/zwf234/rules/master/js/Emby.js
+# Availability: 2022/09/09❌
+# Tips: 
+Emby= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/mb3admin\.com\/admin\/service\/registration\/validateDevice$, script-path=https://raw.githubusercontent.com/zwf234/rules/master/js/Emby.js
+
+# Name: 音频剪辑提取 
+# Author: LiangYi520/QuantumultX-Script
+# hostname: kongkongfufei.pdf00.com
+# Type: http-response
+# Pattern: ^https?:\/\/kongkongfufei\.pdf00\.com\/api\/client\/info$
+# Script-path: https://raw.githubusercontent.com/LiangYi520/QuantumultX-Script/main/yptq.js
+# Availability: 2022/09/09❌
+# Tips: https://apps.apple.com/cn/app/id1546430222
+音频剪辑提取= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/kongkongfufei\.pdf00\.com\/api\/client\/info$, script-path=https://raw.githubusercontent.com/LiangYi520/QuantumultX-Script/main/yptq.js
+
+
+
+[MITM]
+hostname = %APPEND% apiios_dq.xiangha.com
