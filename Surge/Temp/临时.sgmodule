@@ -12,3 +12,23 @@ https://raw.githubusercontent.com/deezertidal/private/main/vmess-host.js
 
 # 用快捷指令控制Surge模块
 https://baiyun.me/surge-with-china-apps
+
+# app版本及价格监控
+https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/appstore/AppMonitor.js
+
+# 京东半自动销卡 
+https://raw.githubusercontent.com/githubdulong/Script/master/Jd_unbindCard.sgmodule
+# 京东助手(注入式需key）
+https://raw.githubusercontent.com/githubdulong/Script/master/jdHelper.sgmodule
+# 京东联盟转链（联盟、助手二选一）
+https://raw.githubusercontent.com/githubdulong/Script/master/Surge/jdapp_to_union.sgmodule
+# 京东比价模块
+https://raw.githubusercontent.com/githubdulong/Script/master/jd_price2.sgmodule
+
+
+# 广告联盟去广告模块
+https://raw.githubusercontent.com/app2smile/rules/master/module/adsense.sgmodule
+# 防止googleCN模块
+https://raw.githubusercontent.com/SukkaW/Surge/master/Modules/google_cn_307.sgmodule
+# ChangeUA 使用手机百度 Quark 的 User-Agentsgmodule
+https://raw.githubusercontent.com/zZPiglet/Task/master/ChangeUA.sgmodule

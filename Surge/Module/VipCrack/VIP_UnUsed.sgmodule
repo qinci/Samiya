@@ -3,116 +3,6 @@
 #!system=ios
 
 [Script]
-# Name: 堆糖 
-# Author: ddgksf2013/Cuttlefish
-# hostname: www.duitang.com
-# Type: http-response
-# Pattern: ^https?:\/\/www\.duitang\.com\/napi\/vienna\/graphic\/template 
-# Script-path: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/duitangpro.js
-# Availability: 2022/09/10 ❌
-# Tips: 
-堆糖 = type=http-response, requires-body=1, pattern=^https?:\/\/www\.duitang\.com\/napi\/vienna\/graphic\/template , script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/duitangpro.js
-
-# Name: 西窗烛 
-# Author: ddgksf2013/Cuttlefish
-# hostname: lchttpapi.xczim.com
-# Type: http-response
-# Pattern: https://lchttpapi.xczim.com/*
-# Script-path: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcz.js
-# Availability: 2022/09/10 ❌
-# Tips: 
-西窗烛 = type=http-response, requires-body=1, pattern=https://lchttpapi.xczim.com/*, script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcz.js
-
-# Name: 小习惯 
-# Author: ddgksf2013/Cuttlefish
-# hostname: xianbeikeji.com
-# Type: http-response
-# Pattern: https://xianbeikeji.com/daily/app/user/query
-# Script-path: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/mzjz.js
-# Availability: 2022/09/10 ❌
-# Tips: 
-小习惯 = type=http-response, requires-body=1, pattern=https://xianbeikeji.com/daily/app/user/query, script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/mzjz.js
-
-# Name: 云听 
-# Author: ddgksf2013/Cuttlefish
-# hostname: getway.radio.cn
-# Type: http-response
-# Pattern: http://getway.radio.cn/app*
-# Script-path: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/yt.js
-# Availability: 2022/09/10 ❌
-# Tips: 
-云听 = type=http-response, requires-body=1, pattern=http://getway.radio.cn/app*, script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/yt.js
-
-# Name: 纸条 
-# Author: lutqhysky/quantumultx
-# hostname: *.zuowenzhitiao.com
-# Type: http-response
-# Pattern: ^https?:\/\/(app1|zwzt-h5).zuowenzhitiao.com
-# Script-path: https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/xiaozhitiao/Script/xiaozhitiao.js
-# Availability: 2022/09/10 ❌
-# Tips: 
-纸条 = type=http-response, requires-body=1, pattern=^https?:\/\/(app1|zwzt-h5).zuowenzhitiao.com, script-path=https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/xiaozhitiao/Script/xiaozhitiao.js
-
-# Name: 知音漫客 
-# Author: NobyDa/Script
-# hostname: apigate.zymk.cn
-# Type: http-response
-# Pattern: ^https:\/\/apigate\.zymk\.cn\/(zymk-getuserinfo-api\/v1\/getuserinfo|zymk-userpurchased-api\/v1\/userpurchased\/paychapters)\/
-# Script-path: https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Zymh.js
-# Availability: 2022/09/10 ❌
-# Tips: 解锁知音漫客付费章节 (需登录)
-知音漫客 = type=http-response, requires-body=1, pattern=^https:\/\/apigate\.zymk\.cn\/(zymk-getuserinfo-api\/v1\/getuserinfo|zymk-userpurchased-api\/v1\/userpurchased\/paychapters)\/, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Zymh.js
-
-# Name: Lake 
-# Author: ddgksf2013/Cuttlefish
-# hostname: revenuecat.lakecoloring.com
-# Type: http-response
-# Pattern: ^https?:\/\/revenuecat\.lakecoloring\.com\/v\d\/(receipts|subscribers).*$ 
-# Script-path: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/lakepro.js
-# Availability: 2022/09/09 ❌
-# Tips: 
-Lake = type=http-response, requires-body=0, pattern=^https?:\/\/revenuecat\.lakecoloring\.com\/v\d\/(receipts|subscribers).*$ , script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/lakepro.js
-
-# Name: Cutisan 
-# Author: I-am-R-E/QuantumultX
-# hostname: cutisanapi.imuuzi.com
-# Type: http-response
-# Pattern: ^https?:\/\/cutisanapi\.imuuzi\.com\/api\/(Index\/index|Home\/index).*$ 
-# Script-path: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Cutisan.js
-# Availability: 2022/09/09 ❌
-# Tips: 
-Cutisan = type=http-response, requires-body=1, pattern=^https?:\/\/cutisanapi\.imuuzi\.com\/api\/(Index\/index|Home\/index).*$ , script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Cutisan.js
-
-# Name: Wink 
-# Author: ddgksf2013/Cuttlefish
-# hostname: api-sub.meitu.com
-# Type: http-response
-# Pattern: ^https?:\/\/api-sub\.meitu\.com\/v\d\/user\/vip_info\.json.*$ 
-# Script-path: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/wink.js
-# Availability: 2022/09/09 ❌
-# Tips: 
-Wink = type=http-response, requires-body=1, pattern=^https?:\/\/api-sub\.meitu\.com\/v\d\/user\/vip_info\.json.*$ , script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/wink.js
-
-# Name: 轻颜相机 
-# Author: ddgksf2013/Cuttlefish
-# hostname: commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com
-# Type: http-response
-# Pattern: ^https?:\/\/(commerce-.api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVerifyReceipt.php|v1/subscription/user_info).$ 
-# Script-path: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/commerce.js
-# Availability: 2022/09/10 ❌
-# Tips: 需要登录
-轻颜相机 = type=http-response, requires-body=1, pattern=^https?:\/\/(commerce-.api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVerifyReceipt.php|v1/subscription/user_info).$ , script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/commerce.js
-
-# Name: Nebo 
-# Author: ddgksf2013/Cuttlefish
-# hostname: *.nebo.app
-# Type: http-response
-# Pattern: ^https?:\/\/.*\.nebo\.app\/api\/.\/inapppurchase\/apple\/receipt.*$ 
-# Script-path: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/nebo.js
-# Availability: 2022/09/09 ❌
-# Tips: 
-Nebo = type=http-response, requires-body=1, pattern=^https?:\/\/.*\.nebo\.app\/api\/.\/inapppurchase\/apple\/receipt.*$ , script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/nebo.js
-
 # Name: Spotify 
 # Author: app2smile/rules
 # hostname: spclient.wg.spotify.com
@@ -122,6 +12,36 @@ Nebo = type=http-response, requires-body=1, pattern=^https?:\/\/.*\.nebo\.app\/a
 # Availability: 2022/09/09 ❌
 # Tips: 
 Spotify = type=http-response, requires-body=1, pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v\d\/bootstrap|user-customization-service\/v\d\/customize)$, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+
+# Name: 西窗烛 
+# Author: ddgksf2013/Cuttlefish
+# hostname: lchttpapi.xczim.com
+# Type: http-response
+# Pattern: https://lchttpapi.xczim.com/*
+# Script-path: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcz.js
+# Availability: 2022/09/10 ✔
+# Tips: 
+西窗烛 = type=http-response, requires-body=1, pattern=https://lchttpapi.xczim.com/*, script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcz.js
+
+# Name: 小习惯 
+# Author: ddgksf2013/Cuttlefish
+# hostname: xianbeikeji.com
+# Type: http-response
+# Pattern: https://xianbeikeji.com/daily/app/user/query
+# Script-path: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/mzjz.js
+# Availability: 2022/09/10 ✔
+# Tips: 
+小习惯 = type=http-response, requires-body=1, pattern=https://xianbeikeji.com/daily/app/user/query, script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/mzjz.js
+
+# Name: 知音漫客 
+# Author: NobyDa/Script
+# hostname: apigate.zymk.cn
+# Type: http-response
+# Pattern: ^https:\/\/apigate\.zymk\.cn\/(zymk-getuserinfo-api\/v1\/getuserinfo|zymk-userpurchased-api\/v1\/userpurchased\/paychapters)\/
+# Script-path: https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Zymh.js
+# Availability: 2022/09/10 ✔
+# Tips: 解锁知音漫客付费章节 (需登录)
+知音漫客 = type=http-response, requires-body=1, pattern=^https:\/\/apigate\.zymk\.cn\/(zymk-getuserinfo-api\/v1\/getuserinfo|zymk-userpurchased-api\/v1\/userpurchased\/paychapters)\/, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Zymh.js
 
 # Name: 搜图神器 
 # Author: Alex0510/Eric
@@ -333,6 +253,5 @@ Cubox = type=http-response, requires-body=1, pattern=^https?:\/\/cubox\.pro\/c\/
 # Tips: 
 句读 = type=http-response, requires-body=1, pattern=^https?:\/\/judouapp\.com\/api\/v2\/mine\/profile.*$ , script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/judu.js
 
-
 [MITM]
-hostname = %APPEND% www.duitang.com, lchttpapi.xczim.com, xianbeikeji.com, getway.radio.cn, *.zuowenzhitiao.com, apigate.zymk.cn, revenuecat.lakecoloring.com, cutisanapi.imuuzi.com, api-sub.meitu.com, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, *.nebo.app, spclient.wg.spotify.com, wallpaper.soutushenqi.com, app.yiyan.art, note.youdao.com, service.ilovepdf.com, api.alohaprofile.com, subscription-api.notedapp.io, *.wallpaperscraft.com, mid.zineapi.com, api.polaxiong.com, bmall.camera360.com, api.neuralprisma.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, m2u-api.getkwai.com, backend.getdrafts.com, pro.smallpdf.com, www.40sishi.com, p.du.163.com, pocketlists.com, cubox.pro, api.risingfalling.com, judouapp.com
+hostname = %APPEND% spclient.wg.spotify.com, lchttpapi.xczim.com, xianbeikeji.com, apigate.zymk.cn, wallpaper.soutushenqi.com, app.yiyan.art, note.youdao.com, service.ilovepdf.com, api.alohaprofile.com, subscription-api.notedapp.io, *.wallpaperscraft.com, mid.zineapi.com, api.polaxiong.com, bmall.camera360.com, api.neuralprisma.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, m2u-api.getkwai.com, backend.getdrafts.com, pro.smallpdf.com, www.40sishi.com, p.du.163.com, pocketlists.com, cubox.pro, api.risingfalling.com, judouapp.com
