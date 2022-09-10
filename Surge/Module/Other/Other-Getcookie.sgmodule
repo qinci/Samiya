@@ -1,9 +1,14 @@
 #!name=Other-Getcookie
-#!desc=京东
+#!desc=Cooike获取(京东|什么值得买|Testflight)
 
+# Testflight需要打开H2，且与其他Testflight脚本不能同时存在
 [Script]
-获取京东Cookie = type=http-request,requires-body=1,pattern=^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?),script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+获取京东= type=http-request,requires-body=1,pattern=^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?),script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+获取什么值得买= type=http-request,requires-body=1,pattern=^https?:\/\/zhiyou\.smzdm\.com\/user$,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_signin.js
+获取Testflight = type=http-request,pattern=^https:\/\/testflight\.apple\.com\/v3\/accounts/.*\/apps$,requires-body=0,script-path=https://github.com/DecoAri/JavaScript/blob/main/Surge/TF_keys.js?raw=true
 
 [MITM]
 # > 京东 //ms.jr.jd.com, me-api.jd.com, api.m.jd.com
-hostname =  %APPEND% ms.jr.jd.com, me-api.jd.com, api.m.jd.com
+# > 什么值得买//zhiyou.smzdm.com
+# > Testflight// testflight.apple.com
+hostname =  %APPEND% ms.jr.jd.com, me-api.jd.com, api.m.jd.com, zhiyou.smzdm.com, testflight.apple.com

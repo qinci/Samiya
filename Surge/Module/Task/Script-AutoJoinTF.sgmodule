@@ -1,0 +1,9 @@
+#!name=Script-AutoJoinTF
+#!desc=自动加入TF链接
+#!system=ios
+
+# 备注：手动在surge 脚本编辑器里点击左下角设置图标，点击$persistentStore，添加名为“APP_ID”的持久化数据，他们的对应的key（内容）为tf链接 https://testflight.apple.com/join/LPQmtkUs 的join后的字符串（也就是此例子的“LPQmtkUs”）⚠️：支持无限个TF链接，每个链接需要用英文逗号“,”隔开（如： LPQmtkUs,Hgun65jg,8yhJgv）
+# 原链接 https://github.com/DecoAri/Module/blob/main/Surge/Auto_join_TF.sgmodule?raw=true
+
+[Script]
+AutoJoinTF = type=cron, cronexp=*/10 * * * * *, script-path=https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Function/Auto_join_TF.js, wake-system=0, timeout=240

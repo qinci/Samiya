@@ -1,3 +1,5 @@
+/* Surge QX脚本转换器
+*/
 let isQuantumultX = $task != undefined;
 
  let isSurge = $httpClient != undefined;

@@ -5,7 +5,7 @@
 [General]
 compatibility-mode = 3
 force-http-engine-hosts = %APPEND% -<ip-address>, *
-
+# skip-proxy = 
 [MITM]
 skip-server-cert-verify = 1
 tcp-connection = 0

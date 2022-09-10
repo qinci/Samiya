@@ -6,7 +6,6 @@ https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/modules/ht
 
 # Sub-Store脚本操作：重命名
 https://github.com/futurkk/Potato/blob/main/Rename/rename.js
-
 # Sub-Store脚本操作 修改host混淆
 https://raw.githubusercontent.com/deezertidal/private/main/vmess-host.js
 
@@ -15,6 +14,9 @@ https://baiyun.me/surge-with-china-apps
 
 # app版本及价格监控
 https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/appstore/AppMonitor.js
+
+# 南京工业大学校园网Njtech-Home自动登录
+https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/Surge/Module/NjtechAutoLogin.sgmodule
 
 # 京东半自动销卡 
 https://raw.githubusercontent.com/githubdulong/Script/master/Jd_unbindCard.sgmodule
