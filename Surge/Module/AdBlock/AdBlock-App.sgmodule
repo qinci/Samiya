@@ -74,7 +74,10 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/s
 
 # > 微博国际版
 ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php - reject
-^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/page\/get_search_suggest - reject
+^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/page\/get_search_suggest - reject-dict
+^ttps?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*user&a=get_searching_info - reject
+^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=search_topic - reject
+^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*ads - reject
 
 # > 什么值得买
 ^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/other_modul - reject
@@ -111,14 +114,10 @@ http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,m
 微博去广告配置 = type=cron,cronexp="0 0 1 1 * ? ",debug=1,script-path=https://hub.nan.ge/Script/Weibo/Config.js
 
 # > 微博国际版
-# ～ WeiboLite_微博国际版_推荐tab|热门tab去广告
-微博国际版_推荐tab|热门tab去广告 = type=http-response,pattern=^^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses\/unread_hot_timeline ,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/weibo_json.js
-# ～ WeiboLite_微博国际版_趋势tab 
-微博国际版_趋势tab = type=http-response,pattern=^^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/cardlist ,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/weibo_json.js
-# ～ WeiboLite_微博国际版_关注tab去广告
-微博国际版_关注tab去广告 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses\/friends_timeline,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/weibo_json.js
-# ～ WeiboLite_微博国际版_趋势tab去广告
-微博国际版_趋势tab去广告 = type=http-response,pattern=^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=trends,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/weibo_json.js
+微博国际版_推荐tab|热门tab=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses\/unread_hot_timeline ,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/weibo_json.js
+微博国际版_关注tab去广告=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses\/friends_timeline ,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/weibo_json.js
+微博国际版_趋势tab=type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/cardlist ,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/weibo_json.js
+微博国际版_趋势tab去广告=type=http-response,pattern=^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=trends ,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/weibo_json.js
 
 # > 贴吧
 贴吧净化 = type=http-response,pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(tiebaads\/commonbatch|c\/s\/sync),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js,script-update-interval=0

@@ -1,7 +1,7 @@
 #!name=Other-TunOnly
 #!desc=用于跳过某些App的代理检测
 #!system=ios
-
+# 开启 TUN Only 模式后会导致 HTTP 相关的高级功能失效，且性能会稍有下降。
 [General]
 compatibility-mode = 3
 force-http-engine-hosts = %APPEND% -<ip-address>, *

@@ -114,60 +114,6 @@ if (ua.indexOf("MOZE") != -1) {
   }
 }
 
-
-//图图记账
-if (ua.indexOf("totowallet") != -1) {
-  objc =
-  {
-    "request_date": "2022-01-27T05:56:29Z",
-    "request_date_ms": 1643262989454,
-    "subscriber": {
-      "entitlements": {
-        "all": {
-          "expires_date": null,
-          "grace_period_expires_date": null,
-          "product_identifier": "com.ziheng.totowallet.onetimepurchase",
-          "purchase_date": "2022-01-27T04:17:03Z"
-        }
-      },
-      "first_seen": "2021-11-24T07:17:57Z",
-      "last_seen": "2022-01-27T04:17:54Z",
-      "management_url": "itms-apps://apps.apple.com/account/subscriptions",
-      "non_subscriptions": {
-        "com.ziheng.totowallet.onetimepurchase": [{
-          "id": "6060eea19b",
-          "is_sandbox": true,
-          "original_purchase_date": "2022-01-27T04:17:03Z",
-          "purchase_date": "2022-01-27T04:17:03Z",
-          "store": "app_store"
-        }]
-      },
-      "original_app_user_id": "$RCAnonymousID:04d7eec58523496c9b29d3d6f4580ab6",
-      "original_application_version": "1.0",
-      "original_purchase_date": "2013-08-01T07:00:00Z",
-      "other_purchases": {
-        "com.ziheng.totowallet.onetimepurchase": {
-          "purchase_date": "2022-01-27T04:17:03Z"
-        }
-      },
-      "subscriptions": {
-        "com.ziheng.totowallet.monthly": {
-          "billing_issues_detected_at": null,
-          "expires_date": "2022-02-11T11:15:28Z",
-          "grace_period_expires_date": null,
-          "is_sandbox": false,
-          "original_purchase_date": "2022-01-11T11:15:29Z",
-          "ownership_type": "PURCHASED",
-          "period_type": "normal",
-          "purchase_date": "2022-01-11T11:15:28Z",
-          "store": "app_store",
-          "unsubscribe_detected_at": "2022-01-24T05:49:32Z"
-        }
-      }
-    }
-  }
-}
-
 //Grow
 if (ua.indexOf("Grow") != -1) {
   objc = {
@@ -234,60 +180,6 @@ if (ua.indexOf("VSCO") != -1) {
           "original_purchase_date": "2020-02-11T07:52:55Z",
           "period_type": "normal",
           "purchase_date": "2020-02-11T07:52:54Z",
-          "store": "app_store",
-          "unsubscribe_detected_at": null
-        }
-      }
-    }
-  }
-}
-
-//每日占星
-if (ua.indexOf("%E6%98%9F%E5%BA%A7") != -1) {
-  objc = {
-    "subscriber": {
-      "entitlements": {
-        "pro": {
-          "expires_date": "2029-05-26T05:05:04Z",
-          "product_identifier": "com.rk.horoscope.month12.full",
-          "purchase_date": "2022-04-09T05:05:04Z"
-        }
-      },
-      "subscriptions": {
-        "com.rk.horoscope.month12.full": {
-          "billing_issues_detected_at": null,
-          "expires_date": "2029-05-26T05:05:04Z",
-          "is_sandbox": false,
-          "original_purchase_date": "2022-04-09T05:05:04Z",
-          "period_type": "trial",
-          "purchase_date": "2023-04-09T05:05:04Z",
-          "store": "app_store",
-          "unsubscribe_detected_at": null
-        }
-      }
-    }
-  }
-}
-
-//ColorWidget
-if (ua.indexOf("WidgetsApp") != -1) {
-  objc = {
-    "subscriber": {
-      "entitlements": {
-        "pro": {
-          "expires_date": "2029-05-26T05:05:04Z",
-          "product_identifier": "cw_1999_ly_3d0",
-          "purchase_date": "2022-04-09T05:05:04Z"
-        }
-      },
-      "subscriptions": {
-        "cw_1999_ly_3d0": {
-          "billing_issues_detected_at": null,
-          "expires_date": "2029-05-26T05:05:04Z",
-          "is_sandbox": false,
-          "original_purchase_date": "2022-04-09T05:05:04Z",
-          "period_type": "trial",
-          "purchase_date": "2022-04-09T05:05:04Z",
           "store": "app_store",
           "unsubscribe_detected_at": null
         }
