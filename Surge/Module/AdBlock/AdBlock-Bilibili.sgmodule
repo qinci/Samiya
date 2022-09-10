@@ -30,7 +30,7 @@ URL-REGEX,^https://app.bilibili.com/x/v2/splash/show,REJECT
 
 [Script]
 # BiliBili_哔哩哔哩_启动时开启直连模式[自行启用]
-http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Function/bilibili_startup_direct.js
+# http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Function/bilibili_startup_direct.js
 # BiliBili_哔哩哔哩_观影页面去广告
 http-response ^https?:\/\/api\.(bilibili|biliapi)\.(com|net)\/pgc\/page\/cinema\/tab\? requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/lhsll/kele/main/chongxie/bilinilibeta/bilibili_json.js
 # BiliBili_哔哩哔哩_应用开屏广告预加载
