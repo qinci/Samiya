@@ -11,21 +11,18 @@ https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/AdBlock/A
 https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/AdBlock/AdBlock-Bilibili.sgmodule
 https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/AdBlock/AdBlock-WeApp.sgmodule
 https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/AdBlock/AdBlock-Web.sgmodule
-
 https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Function/Function-App.sgmodule
 https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Function/Function-iRingo.sgmodule
 https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Function/Function-Module.sgmodule
 https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Function/Function-QSearch.sgmodule
-
 https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Other/Other-General.sgmodule
 https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Other/Other-Getcookie.sgmodule
 https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Other/Other-MitmAll.sgmodule
 https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Other/Other-TunOnly.sgmodule
-
 https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Task/Script-AutoJoinTF.sgmodule
 https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/Task/Script-CronTask.sgmodule
-
 https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/VipCrack/VIP_Common.sgmodule
 https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/VipCrack/VIP_InUsed.sgmodule
 https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Module/VipCrack/VIP_UnUsed.sgmodule
 
+https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Pannel/Pannel.sgmodule
