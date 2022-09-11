@@ -1,4 +1,4 @@
-const header = $request.headers;
+var header = $request.headers;
 
 //Fileball
 if (header["User-Agent"].indexOf("Fileball") != -1) {

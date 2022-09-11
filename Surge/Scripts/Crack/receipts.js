@@ -1,5 +1,5 @@
-const objc = JSON.parse(typeof $response != "undefined" && $response.body || null);
-const ua = $request.headers['User-Agent'] || $request.headers['user-agent'];
+var objc = JSON.parse(typeof $response != "undefined" && $response.body || null);
+var ua = $request.headers['User-Agent'] || $request.headers['user-agent'];
 
 
 //Fileball

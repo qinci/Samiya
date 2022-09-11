@@ -1,7 +1,7 @@
-const resp = {};
-const obj = JSON.parse(typeof $response != "undefined" && $response.body || null);
-const ua = $request.headers['User-Agent'] || $request.headers['user-agent'];
-const list = {
+var resp = {};
+var obj = JSON.parse(typeof $response != "undefined" && $response.body || null);
+var ua = $request.headers['User-Agent'] || $request.headers['user-agent'];
+var list = {
     'VSCO': { name: 'membership', id: 'com.circles.fin.premium.yearly' },
     'Filebox': { name: 'filebox_pro', id: 'com.premium.yearly' },
     'Fileball': { name: 'filebox_pro', id: 'com.premium.yearly' },
@@ -14,7 +14,7 @@ const list = {
     'Pro': { name: 'pro', id: 'revenuecat.pro.yearly' }
 };
 
-const data = {
+var data = {
     "expires_date": "2099-09-09T07:52:54Z",
     "original_purchase_date": "2022-09-09T07:52:55Z",
     "product_identifier": "revenuecat.pro.yearly",

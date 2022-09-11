@@ -24,7 +24,7 @@ if (ua.indexOf('VSCO') != -1) {
 Status = 'HTTP/1.1 200 OK';
 Headers = {"Content-Type": "application/json"};
 
-const Response = {
+var Response = {
     status: Status,
     headers: Headers,
     body: JSON.stringify(Body)
