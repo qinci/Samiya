@@ -5,13 +5,13 @@
 [Script]
 #>>>>>>>>>>>>>>>>>>>>>>多合一解锁
 # buy.itunes.apple.com, 
-itunes= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Crack/Common/itunes.js
+itunes = type=http-response, requires-body=1, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Crack/Common/itunes.js
 
 # api.revenuecat.com, 
-receipts= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$, script-path=https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Crack/Common/receipts.js
+receipts = type=http-response, requires-body=1, pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32}).*$, script-path=https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Crack/Common/receipts.js
 
 # api.revenuecat.com, 
-revenuecat= requires-body=1, max-size=0, type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}$, script-path=https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Crack/Common/revenuecat.js
+revenuecat = type=http-response, requires-body=1, pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}$, script-path=https://raw.githubusercontent.com/longlongx/Samiya/master/Surge/Scripts/Crack/Common/revenuecat.js
 
 [MITM]
 hostname = %APPEND% buy.itunes.apple.com, api.revenuecat.com
